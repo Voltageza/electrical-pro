@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -36,18 +37,12 @@ export const Navbar = () => {
       )}
     >
       <div className="container flex h-20 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 group">
-          <div className="flex h-10 w-10 items-center justify-center rounded-md bg-gradient-electric shadow-glow">
-            <Zap className="h-5 w-5 text-white" strokeWidth={2.5} />
-          </div>
-          <div className="leading-tight">
-            <div className="font-display text-xl font-bold tracking-wide text-white">
-              ELECTRICAL <span className="text-accent">PRO</span>
-            </div>
-            <div className="text-[10px] uppercase tracking-[0.2em] text-white/60">
-              Danny Farnham · Tim Toovey
-            </div>
-          </div>
+        <Link to="/" className="flex items-center group" aria-label="Electrical Pro home">
+          <img
+            src={logo}
+            alt="Electrical Pro — Danny Farnham & Tim Toovey"
+            className="h-10 sm:h-12 w-auto brightness-0 invert"
+          />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">

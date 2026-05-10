@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Zap } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export const Footer = () => {
   return (
@@ -7,19 +7,11 @@ export const Footer = () => {
       <div className="container py-16">
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-md bg-gradient-electric shadow-glow">
-                <Zap className="h-5 w-5 text-white" strokeWidth={2.5} />
-              </div>
-              <div className="leading-tight">
-                <div className="font-display text-xl font-bold tracking-wide text-white">
-                  ELECTRICAL <span className="text-accent">PRO</span>
-                </div>
-                <div className="text-[10px] uppercase tracking-[0.2em] text-white/60">
-                  Danny Farnham · Tim Toovey
-                </div>
-              </div>
-            </div>
+            <img
+              src={logo}
+              alt="Electrical Pro — Danny Farnham & Tim Toovey"
+              className="h-12 w-auto brightness-0 invert"
+            />
             <p className="mt-5 text-white/60 max-w-md">
               Three decades of trusted electrical contracting across the Garden
               Route — solar, commercial, agricultural, and residential.
