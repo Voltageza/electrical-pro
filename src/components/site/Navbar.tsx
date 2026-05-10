@@ -41,7 +41,7 @@ export const Navbar = () => {
           <img
             src={logo}
             alt="Electrical Pro — Danny Farnham & Tim Toovey"
-            className="h-10 sm:h-12 w-auto brightness-0 invert"
+            className="h-10 sm:h-12 w-auto"
           />
         </Link>
 
