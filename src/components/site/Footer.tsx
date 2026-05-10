@@ -10,7 +10,7 @@ export const Footer = () => {
             <img
               src={logo}
               alt="Electrical Pro — Danny Farnham & Tim Toovey"
-              className="h-12 w-auto brightness-0 invert"
+              className="h-12 w-auto"
             />
             <p className="mt-5 text-white/60 max-w-md">
               Three decades of trusted electrical contracting across the Garden
