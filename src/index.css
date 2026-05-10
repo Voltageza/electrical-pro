@@ -113,8 +113,8 @@
 }
 
 @layer utilities {
-  .bg-gradient-hero { background: var(--gradient-hero); }
-  .bg-gradient-electric { background: var(--gradient-electric); }
+  .bg-gradient-hero { background-image: var(--gradient-hero); }
+  .bg-gradient-electric { background-image: var(--gradient-electric); }
   .bg-gradient-dark { background: var(--gradient-dark); }
   .bg-gradient-amber { background: var(--gradient-amber); }
   .shadow-glow { box-shadow: var(--shadow-glow); }
