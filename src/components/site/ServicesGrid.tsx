@@ -30,6 +30,7 @@ const services = [
     title: "Agricultural",
     icon: Tractor,
     image: agriImg,
+    video: agriVideo.url,
     blurb:
       "Specialised electrical services for farms and agri-businesses — efficient, reliable and safe.",
     to: "/agricultural",
