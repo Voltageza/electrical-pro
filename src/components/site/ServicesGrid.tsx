@@ -77,12 +77,24 @@ export const ServicesGrid = () => {
                 to={s.to}
                 className="group block relative overflow-hidden rounded-2xl shadow-card hover:shadow-elevated transition-smooth h-[420px]"
               >
-                <img
-                  src={s.image}
-                  alt={s.title}
-                  loading="lazy"
-                  className="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-smooth duration-700"
-                />
+                {s.video ? (
+                  <video
+                    src={s.video}
+                    poster={s.image}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-smooth duration-700"
+                  />
+                ) : (
+                  <img
+                    src={s.image}
+                    alt={s.title}
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-smooth duration-700"
+                  />
+                )}
                 <div className={`absolute inset-0 bg-gradient-to-t ${s.accent} mix-blend-multiply opacity-60 group-hover:opacity-40 transition-smooth`} />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-navy-deep via-brand-navy-deep/40 to-transparent" />
 
