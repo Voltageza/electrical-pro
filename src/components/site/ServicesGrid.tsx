@@ -4,6 +4,7 @@ import { ArrowRight, Sun, Building2, Tractor, Home } from "lucide-react";
 import solarImg from "@/assets/service-solar.jpg";
 import commercialImg from "@/assets/service-commercial.jpg";
 import agriImg from "@/assets/service-agricultural.jpg";
+import agriVideo from "@/assets/agricultural.mp4.asset.json";
 import residentialImg from "@/assets/service-residential.jpg";
 
 const services = [
